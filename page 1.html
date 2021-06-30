@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>www.lolo.com</title>
+
+        <style>
+            .header{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                font-weight: 100px;
+                top: 240px;
+                left: 410px;
+                position: fixed;
+            }
+
+            .header h1{
+                color:grey;
+            }
+
+            .search{
+                padding-right: 200px;
+            }
+
+            .search input{
+                border-radius: 10px;
+                border: none;
+                box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.24);
+            }
+
+            .nav a{
+                display: inline;
+                text-align: center;
+                width: 100%;
+                font-size: 15px;
+                text-decoration: none;
+                color:grey;
+                padding: 10px 16px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              
+            }
+
+            .nav{
+                padding-right: 50px;
+            }
+
+            .nav a:hover{
+                background-color: transparent;
+                color:orange;
+            }
+
+            .text1{
+                transform: translate(-400px, 400);
+            }
+            .header span{
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 40px;
+                animation: text 3s 1;
+            }
+
+            @keyframes text {
+                0%{
+                    margin-bottom: 400px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <center>
+              
+                <img src="logo2.png" style="width:20%;">
+                </center>
+                
+                <br>
+                <br>
+
+               
+  	<div class="search" style="font-family: comic Sans Ms; float: right;">
+        <center>
+
+            <input type="search" value="" id="pr" onchange="openPage()" style="padding: 16px; border-radius: 1px; border: black; width:140%; padding-right: 200px; color:grey;"></input>
+
+            <script type="text/javascript">
+                function openPage(){
+                    var x = document.getElementById("pr").value;
+                    var y = document.getElementById("pr").value;
+
+                    if(x === "Grand theft auto san andreas"){
+                        window.open("gtasa.html");
+                    }else{
+                        forces();
+                    }
+
+                    if(y === "Just cause 2"){
+                        window.open("just-cause.html");
+                        window.alert("How was the game, was it  cool or bad, keep up exploring.....");
+                    }else if(y == "Just cause 3"){
+                        window.open("just-cause.html")
+                    }
+                }
+
+                function forces(){
+                    window.open("/404 error.html");
+                }
+
+            </script>
+        </center>
+        </div>
+                <br><br><br><br>
+                <br><br><br><br>
+                
+                <div class="nav">
+                    <center>
+                        <a href="#">Home |</a>
+                        <a href="#">About Us |</a>
+                        <a href="#">Translator |</a>
+                        <a href="#">Run code |</a>
+                        <a href="#">Get list </a>
+                    </center>
+                </div>
+        </div>
+    </body>
+</html>

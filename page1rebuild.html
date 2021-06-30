@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello world</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="page2rebuit.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body style="color:grey;">
+
+
+
+        <!--Login page-->
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+        
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+
+            <script>
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+                
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+                </script>
+                
+        </div>
+        <!--Login page-->
+
+
+        <div class="next"><a href="compiler.html">Compile your code</a></div>
+        <div class="navs" style=" padding:10px;">
+            <span style="color: grey; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Settings</span>
+            <div class="navscontent">
+                <p><a href="#">Dark Mode</a></p>
+                <p><a href="#">History</a></p>
+                <p><a href="#">Advanced Settings</a></p>
+                <p><a onclick="openForm()">Login</a></p>
+                <p><a href="#">text font size</a></p>
+                <div class="content">
+                    <p><a href="#">background-color</a></p>
+                    <div class="contents" style="border-radius:10px;">
+                        <center><h2>Change Background Color</h2></center>
+                        <input type="text" id="colorinputtext" placeholder="Nothing goes in here" style="
+                            padding:10px;
+                            border:none;
+                            
+                        "><br><br>
+                        
+                        <center><p>Select your color here</p><br><input type="color" id="colorinputcolor" placeholder="insert a color" style="width:50%; height:50px;"><br><br></center>
+                        <center><input type="button"  id="colorbutton" value="click to change" onclick="changeColor()" style="padding: 6px; border:none;"></center>
+                    </div>
+                </div>
+                <p><a href="#">Dark Mode</a></p>
+                <p><a href="#">Dark Mode</a></p>
+
+                <script>
+                    function changeColor(){
+                        let color = document.getElementById('colorinputcolor').value;
+                        document.body.style.backgroundColor = color;
+                        document.getElementById('colorinputtext').value = color;
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header">
+                <!--Img src-->
+                <img src="logo2.png">
+            </div>
+            <div class="search">
+                <input type="search" value="" placeholder="search here" id="url" onchange="openPage()"><br>
+                <div class="nav">
+                    <a href="#">Home |</a>
+                    <a href="#">About Us |</a>
+                    <a href="#">Contact Us |</a>
+                    <a href="#">Get list </a>
+                </div>
+            </div>
+           
+        </div>
+
+        <script type="text/javascript">
+            function openPage() {
+                var a = document.getElementById("url").value;
+                var b = document.getElementById("url").value;
+
+                if(a == "Grand theft auto san andreas for android"){
+                    window.open("gtasa.html");
+                }else{
+                    window.open("404 error.html")
+                }
+            }
+        
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="page2rebuit.css">
+    </head>
+    <body>
+          <button class="tablink" onclick="openPage('HTML', this, 'red')" id="defaultOpen">HTML</button>
+        <button class="tablink" onclick="openPage('CSS', this, 'green')" >CSS</button>
+        <button class="tablink" onclick="openPage('WEBPAGE', this, 'blue')">WEBPAGE</button>
+        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+
+        <style id="styling">
+
+        </style>
+        <div id="HTML" class="tabcontent">
+            <div class="naa">
+                <a href="page1rebuild.html">Home |</a>
+                <a href="#">About Us |</a>
+                <a href="#">Support Us</a>
+            </div>
+            <img src="logo2.png" style="width:10%; padding-bottom:3px;">
+            <p style="font-size:10px; color:black;">HTML CODING GOES HERE...</p>
+
+            <textarea placeholder="HTML goes here"/ onKeyup="compileHTML(this)" style="
+            width:100%;
+             bottom:38%; 
+             resize:none; 
+              height:400px; 
+              outline: none;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.24);
+                            border: none;
+            "></textarea>
+          </div>
+          
+          <div id="CSS" class="tabcontent">
+            <div class="naa">
+                <a href="page1rebuild.html">Home |</a>
+                <a href="#">About Us |</a>
+                <a href="#">Support Us</a>
+            </div>
+            <img src="logo2.png" style="width:10%; padding-bottom:3px;">
+            <p style="font-size:10px; color:black;">CSS CODING GOES HERE...</p>
+
+            <textarea placeholder="css goes here"/ onKeyup="compileCSS(this)" style="
+            width:100%; 
+            bottom:38%; 
+            resize:none; 
+            height:400px;
+            outline: none;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.24);
+                            border: none;
+            "></textarea>
+          </div>
+          
+          <div id="WEBPAGE" class="tabcontent">
+              <div id="output" style="width:100%; bottom:38%; padding-bottom:50%; float: right; color:grey;"></div></div> 
+          </div>
+          
+          <div id="About" class="tabcontent">
+            <img src="logo2.png" style="width:10%; padding-bottom:3px;">
+            <p style="font-size:10px; color:black;">HTML CODING GOES HERE...</p>
+          </div>
+
+    </body>
+
+
+        
+            <script>
+                window.alert("Welcome to code X compiler. Will give you full access to run your html css, code over here. Make sure you loggin before procedding");
+
+                function compileHTML(field, e){
+                    document.getElementById('output').innerHTML = field.value;
+                }
+            
+                function compileCSS(field, e){
+                    document.getElementById('styling').innerHTML = field.value;
+                }
+            </script>
+
+    
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       
+</html>

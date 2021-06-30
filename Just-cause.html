@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .nav a{
+                padding: 10px 16px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input type="search" value="" onchange="openpage()" placeholder="input search here" id="pr" style="float: right; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  padding: 10px; width:20%;">
+        <h1 style="color: grey; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">WebEmittor searched</h1>
+
+            <script>
+                function openPage(){
+                    var p = document.getElementsById("pr").value;
+                    var pi = document.getElementsById("pr").value;
+
+                    if(p == "Just-cause"){
+                        window.open("")
+                    }
+                }
+            </script>
+        <div class="nav">
+            <center>
+            <a href="#">Home |</a>
+            <a href="#">About Us |</a>
+            <a href="#">Get list |</a>
+            <a href="#">Emittor news |</a>
+            </center>
+        </div><br>
+        <hr style="color: rgb(243, 235, 235);">
+    </body>
+</html>

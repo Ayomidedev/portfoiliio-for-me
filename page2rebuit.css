@@ -1,0 +1,353 @@
+.header {
+    padding-top:14%;
+    max-height: 14%;
+    padding-left:43%;
+
+}
+
+.search{
+   padding-top: 15px;
+    padding-left:30%;
+}
+
+.header img{
+    max-width:20%;
+}
+
+.search input{
+    padding: 20px;
+    max-width:50%;
+    width: 50%;
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.12);
+    animation: text 3s 1;
+    border: none;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 9px 7px;
+     
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+}
+
+@keyframes text {
+    0%{
+        margin-bottom: 400px;
+    }
+
+    25%{
+        background-color: rgb(238, 238, 238);
+    }
+    100%{
+        background-color: rgb(174, 174, 245);
+        box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.12);
+    }
+}
+
+.search input:hover{
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.24);
+    border: none;
+    border-radius: 10px;
+    border-color: transparent;
+    border-collapse: collapse;
+    cursor: text;
+    border-style: none;
+    outline: none;
+}
+
+
+.nav{
+    padding-top: 20px;
+    padding-left:6%;
+    max-width: 60%;
+    font-size: 14px;
+}
+.nav a{
+    padding: 10px 16px;
+    text-decoration: none;
+    color: grey;
+    display:inline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.nav a:hover{
+   
+    opacity:30px;
+    border-radius: 5px;
+    color:orange;
+}
+
+.container{
+    max-width: 100%;
+}
+
+
+
+.navs {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.24);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+
+.navscontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    width: 300%;
+    padding: 40px;
+
+}
+
+.navs a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color:grey;
+    padding: 10px;
+    width:50%;
+}
+
+
+.navs a:hover{
+    background-color: black;
+    color:white;
+}
+
+.navs:hover .navscontent {
+    display: block;
+}
+
+.content {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.content:hover .contents {
+    display: block;
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 500px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  width:500px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+.image img{
+    width:50%;
+    max-width:30%;
+    float: left;
+    padding-left: 190px;
+    padding-top: 150px;
+    
+}
+
+.text {
+    float: right;
+    padding-right: 370px;
+    padding-top: 150px;
+    animation: texts 3s 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes texts {
+    0%{
+        margin-top:400px;
+    }
+}
+
+.textss{
+    font-family: comic Sans Ms;
+}
+
+
+.textss button{
+    padding: 10px;
+}
+.textss button a{
+    padding: 10px 16px;
+}
+
+.next{
+    float: right;
+    padding-right: 10px;
+    padding:10px;
+
+}
+
+.next a{
+    text-decoration: none;
+    font-family: comic Sans Ms;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.20);
+    padding: 10px;
+    color:grey;
+    border-radius: 5px;
+}
+
+.next a:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.28);
+    color:grey;
+    border-radius: 10px;
+}
+
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  animation: textsss 3s 1;
+}
+
+@keyframes textsss {
+    0%{
+        margin-top: 400px;
+    }
+}
+
+
+#HTML {background-color: white;}
+#CSS {background-color: white;}
+#WEBPAGE {background-color: rgb(255, 255, 255);}
+#About {background-color: rgb(255, 255, 255);}
+
+.naa {
+    float : right;
+}
+
+.naa a{
+    text-decoration: none;
+   border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:6px 10px;
+    color:grey;
+}
+
+.naa a:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.24);
+}
